@@ -1,3 +1,7 @@
 html {
-font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: lightgray;
 }
