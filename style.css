@@ -1,7 +1,62 @@
 html {
 font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+font-size: 16px;
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+border: solid blue;
+} 
+
+h2 {
+    border: solid green;
+}
+
+header {
+    border: solid peru;
+display: flex;
+justify-content: space-between;
+
+}
+nav {
+border: solid red;
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+
+}
+
+ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: solid yellow;
+}
+
+li {
+    /* padding-left: 30px; */
+    list-style: none;
+    border: solid;
+    margin: 0;
+}
+
+img {
+ width: 500px;
+ height: 400px;
+}
+
+p {
+    border: solid black;
+    width: 700px;
+}
+
+
+   
