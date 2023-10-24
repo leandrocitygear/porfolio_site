@@ -11,18 +11,72 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
 </head>
-<body>
-    <header>
-        <h1>Leandro De la cruz</h1>
-        <h2>Front-End Developer</h2>
-        <nav>
+<body id="desktop" class="unifiednav profile sidebar">
+    <div id="container">
+        <section id="unifiedsidebar">
+            <header>
+                <a href="./Index.html"> <i class="myspacelogo">Myspace</i></a>
+            </header>
+        </section>
+        <section id="sidebar">
+            <header>
+                <div class="item">
+                    <div class="mediasquare">
+                        <img src="./Capture.PNG" alt="">
+                    </div>
+                </div>
+                <h1><span>Leandro De la cruz</span></h1>
+            </header>
+            <nav id="sidebarnav">
+                <ul>
+                    <li><a href=""></a><span>About Me</span></li>
+                    <li><a href=""></a><span>Contact</span></li>
+                </ul>
+            </nav>
+        </section>
+        <div id="wrap">
+            <div class="horizontalcontent">
+                <div id="parallax">
+                    <div id="background">
+                    </div>
+                    <div id="foreground">
+                        <div id="profilewidget">
+                            <div id="profiledetails">
+                                <p>about me</p>
+                                <p>location</p>
+                                <p>linkin</p>
+                                <p>GitHub</p>
+                                <p>skills</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="stream" class="columns infinite profilestream">
+                        <li id="streampost" class="streamitem">project1</li>
+                        <li id="streampost" class="streamitem">project2</li>
+                        <li id="streampost" class="streamitem">project3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer id="footer" class="queue allowskips paused">
+       <div id="global-nav">
+        <nav> 
             <ul>
-                <li>About me</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+            <li>
+                <a href="Index.html"><span>Leandro De la cruz</span></a>
+            </li>
+            <li>
+                <span>Front-End Developer</span>
+            </li>
+        </ul>
+    </nav>
+       </div>
+   </footer>
+</body>
+</html>
+
+<!-- <main>
         <h2>About me</h2>
         <P>
             Hello, I'm Leandro, and I'm pleased to welcome you to my portfolio. I'm currently pursuing the CodeCademy Front-End Development Certification, where I have been actively engaged for the past four months. I have acquired a solid foundation in HTML and CSS, and I am currently immersed in the intricacies of JavaScript. 
@@ -35,9 +89,6 @@
             <br>
             I am committed to integrating dynamic and interactive elements into my web applications using JavaScript. Additionally, my journey includes proficiency in Node.js, and I'm excited to soon embark on a project to create a comprehensive portfolio site. In the near future, I plan to delve into React and Redux to further enrich my skillset.
         </p>
-        <!-- <figure>
-            <img src="Capture.PNG" alt="">
-        </figure> -->
         <section>
           <h2>
             Projects
@@ -55,6 +106,4 @@
         <i class="fa-brands fa-git-alt fa-2xl" style="color: #f34f29;"></i>
         <i class="fa-brands fa-github fa-2xl" style="color: #171515;"></i>
         </section>
-    </main> 
-</body>
-</html>
+    </main>  -->
