@@ -16,6 +16,8 @@ body {
     height: 100%;
     -webkit-font-smoothing: subpixel-antialiased;
     line-height: 1;
+    /* border: solid blue; */
+    margin: 0;
 }
 
 .beam-leandrofxm body {
@@ -52,8 +54,22 @@ a {
     color: #008dde;
     cursor: pointer;
     text-decoration: none; 
-    padding: 13px 0;
 }
+
+#global-nav > nav > ul > li > a {
+    display: block;
+    padding: 13px 0;
+  }
+
+  #global-nav a {
+    color: inherit;
+  }
+
+  #sidebar a, #footer a, .table {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
 
 .unifiednav #sidebar {
     left: 165px;
@@ -67,7 +83,7 @@ a {
   top: 15px;
 }
 
-#sidebar, header {
+#sidebar ,  header {
     border-radius: 3px 3px 0 0;
 }
 
@@ -138,6 +154,7 @@ nav ul {
 }
 
 #parallax {
+    /* border: solid orangered; */
     padding-left: 0;
   white-space: normal;
   margin-left: 0px;
@@ -153,7 +170,7 @@ nav ul {
     z-index: 1;
 }
 
-.horizontalcontent, div {
+.horizontalcontent > div {
     overflow-x: scroll;
   overflow-y: hidden;
   height: 100%;
@@ -173,7 +190,7 @@ nav ul {
 
 }
 
-.#background {
+#background {
     z-index: -1;
   position: absolute;
   left: 0;
@@ -190,6 +207,7 @@ nav ul {
     left: 100%;
     height: 100%;
     background-color: #F3F3F3;
+    width: 100%;
 }
 
 .beam-leandrofxm #foreground {
@@ -200,7 +218,7 @@ nav ul {
 }
 
 
-.beam-leandrofxm #foreground, #profilewidget {
+.beam-leandrofxm #foreground > #profilewidget {
     position: relative;
   margin-left: -320px;
   width: 320px;
@@ -210,9 +228,21 @@ nav ul {
   overflow: hidden;
 }
 
+#foreground > div {
+    background-color: rgba(255,255,255,.8);
+}
+
+#foreground > * {
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  padding: 30px;
+}
 
 
-#profiledetails {
+.beam-leandrofxm #profiledetails {
     position: absolute;
   top: 50px;
   margin: 0px;
@@ -225,28 +255,44 @@ p {
     color: rgb(162, 162, 162);
 }
 
-#stream .profilestream{
+.beam-leandrofxm #stream .profilestream{
     padding-left: 35px;
 }
 
-#stream {
-    transition: margin-left 0.5s ease 0s;
-    padding-left: 35px
+.beam-leandrofxm #stream {
     float: left;
   padding: 10px;
     padding-left: 10px;
   list-style: none;
   white-space: normal;
+  border: solid green
 }
 
-.columns {
+.beam-leandrofxm .columns {
     margin: 0px;
     margin-left: 0px;
   width: auto;
   height: 100%;
   list-style: none;
-  column-width: 294px;
+  column-width: 100%;
   column-gap: 8px;
+  border: solid blue;
+}
+
+.beam-leandrofxm #stream > .streamitem {
+    padding-top: 5px;
+  width: 280px;
+  border: solid red;
+  font-size: 80px;
+}
+
+.horizontalcontent .columns > li {
+    display: inline-flex;
+}
+
+.beam-leandrofxm .columns > li {
+    margin: 0px 5px 10px;
+  break-inside: avoid;
 }
 
 #footer {
@@ -277,35 +323,68 @@ p {
   margin-right: 30px;
   position: relative;
   z-index: 1;
-  width: 345.267px;
+}
+
+.unifiednav #global-nav > nav {
+    margin-right: 41px;
+}
+
+.unifiednav #global-nav > nav > ul:first-child {
+    box-shadow: none;
   height: 58px;
 }
 
-ul {
+.unifiednav #global-nav > nav > ul {
+    padding-right: 27px;
+}
+
+.unifiednav #global-nav > nav > ul:first-child {
+    background-color: #313131;
+  box-shadow: -6px 0 9px -4px rgba(0,0,0,.5),6px 0 9px -4px rgba(0,0,0,.5);
+}
+
+.unifiednav #global-nav > nav > ul {
     float: left;
   list-style: none;
-  /* border: solid red; */
-  padding: 0;
 }
 
-li {
+.unifiedNav #global-nav > nav > ul > li:first-child {
+    display: none;
+}
+
+#global-nav > nav > ul > li {
     position: relative;
-  float: left;
-}
+    float: left;
+  }
 
-span {
+  #global-nav > nav > ul > li > a > span {
     position: relative;
-  display: block;
-  height: 20px;
-  padding: 0px 14px;
-  line-height: 22px;
+    display: block;
+    height: 20px;
+    padding: 6px 14px;
+    line-height: 22px;
+  }
+
+  
+img {
+ width: 250px;
 }
 
+article {
+    border: solid red;
+    width: 400px;
+    height: 500px;
+}
 
+figure {
+    border: solid yellow;
+    width: 400px;
+    height: 500px;
+}
 
-
-
-
+section {
+    display: inline-flex;
+}
 
 
 
@@ -313,108 +392,3 @@ span {
 
 
  
-
-/* h1 {
-border: solid blue;
-} 
-
-h2 {
-    border: solid green;
-}  */
-
-/* header {
-    border: solid peru;
-position: fixed;
-left: 0;
-top: 0;
-bottom: 0;
-padding: 21px 25px;
--webkit-box-sizing: border-box;
-width: 150px;
-z-index: 5;
-background-color: #030303;
-} */
-
-/* nav {
-
-
-}
-
-ul {
-    
-}
-
-li {
-    padding-left: 30px;
-    list-style: none;
-    border: solid;
-}
-
-img {
- width: 100px;
- height: 100px;
-}
-
-p {
-    border: solid black;
-    width: 700px;
-} */
-
-/* main {
-    padding-left: 175px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 585px;
-    width: 1216px;
-    white-space: nowrap;
-    background-image: url(./331295.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid red;
-    display: flex;
-    position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 150px;
-  transform: translate3d(-364px, 0px, 0px);
-  display: block;
-  /* width: 95%; */
-  /* overflow: hidden; */
-  /* z-index: -1; */
-/* } */ 
-
-   
-/* footer {
-    position: fixed;
-    height: 58px;
-    width: 1366px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #272727;
-    color: #FFF;
-    padding: 0 10px 0 16px;
-    z-index: 1;
-    border: solid red;
-} */
-
-/* #footnav {
-    float: left;
-  color: #848484;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-right: 41px;
-  position: relative;
-  z-index: 1;
-  width: 345.267px;
-  height: 58px;
-  border:  solid blue;
-}
-
-#footnav, ul {
-    background-color: #313131;
-    
-} */
