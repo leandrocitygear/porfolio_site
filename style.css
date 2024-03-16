@@ -92,7 +92,7 @@ body {
 #stream {
   position: relative;
   float: left;
-  padding: 10px;
+  /* padding: 10px; */
   padding-left: 70px;
   white-space: normal;
   /* border: solid purple; */
@@ -126,11 +126,19 @@ width: 100%;
 bottom: 0;
 left: 0;
 right: 0;
+display: inline-flex;
 background-color: #272727;
 /* border: solid green; */
 margin-right: 30px;
 z-index: 1;
 }
+
+i {
+  /* border: solid red; */
+  margin: 25px;
+height: 150px; 
+}
+
 
 #namenav {
   display: flex;
@@ -153,14 +161,29 @@ align-items: center;
 }
 
 
-img {
-width: 290px;
+figure img {
+width: 400px;
+/* margin: 10px; */
+position:relative;
+left: 25px;
 }
 
 figure {
-  /* border: solid black; */
-  width: 300px;
-  height: 500px;
+  border: solid black;
+  width: 450px;
+  height: 530px;
+  padding: 5px;
+}
+
+figcaption {
+  color: black;
+  line-height: 20px;
+  
+  font-size: 15px;
+}
+
+button{
+  
 }
 
 #unifiedsidebar {
@@ -230,6 +253,11 @@ word-wrap: break-word;
 font-weight: 400;
 }
 
+h2 {
+  color: black;
+  font-size: 20px;
+}
+
 #wrap {
   position: absolute;
 top: 0;
@@ -284,4 +312,8 @@ a {
 
 a:hover {
   color: lightcoral;
+}
+
+button a {
+  color: black;
 }
