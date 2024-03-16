@@ -11,7 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
 </head>
-<body id="desktop" class="profile sidebar">
+<body id="desktop" class="profile sidebar"> 
+    <div id="fullImageView"> 
+            <img id="fullImage"/>
+            <span id="closeButton" onclick="closeFullView()">x</span>
+        </div>
     <div id="container">
         <section id="unifiedsidebar">
             <header>
@@ -22,12 +26,14 @@
             <header>
                 <div class="item">
                     <div class="mediasquare">
-                        <img src="./Capture.PNG" alt="">
+                        <img id="propic" src="./pictures/IMG_5066.jpg" alt="" onclick="fullView(this.src)">
+                
                     </div>
                 </div>
                 <h1>Leandro De la cruz</h1>
             </header>
         </section>
+       
         <div id="wrap">
             <div id="horizontalcontent">
                 <div id="parallax">
@@ -40,14 +46,15 @@
                                     While I'm not fully certified yet, I'm actively working towards it, eager to enhance my skills and grow in the field.
                                     </p>
                                 <p>Location: San Juan, Puerto Rico</p>
-                                <p><a href="https://www.linkedin.com/in/leandro-de-la-cruz-b7aa812b7/" target="_blank">LinkedIn</a></p> 
-                                <p><a href="https://github.com/leandrocitygear" target="_blank">GitHub</a></p>
+                                <p><a class="links" href="https://www.linkedin.com/in/leandro-de-la-cruz-b7aa812b7/" target="_blank">LinkedIn</a></p> 
+                                <p><a class="links" href="https://github.com/leandrocitygear" target="_blank">GitHub</a></p>
                                 <p>Email: leandrocitygear@icloud.com</p>
+                                <p><a class="links" href="./resorces/resume.pdf" target="_blank">My Resume</a></p>
                             </div>
                             
                         </div>
                         <section id="stream">
-                            <figure><h2>Playlife</h2><img src="./pictures/2024-03-15.png" alt=""><figcaption>With Playlife, you can:<br>
+                            <figure><h2>Playlife</h2><img src="./pictures/2024-03-15.png" alt="" onclick="fullView(this.src)"><figcaption><br>With Playlife, you can:<br>
                                 <br>
                                 1. Create Personalized Playlists: Mix and match your favorite tracks to create playlists tailored to your taste.
                                 <br>
@@ -55,7 +62,7 @@
                                 2. Sync with Spotify: Seamlessly connect to your Spotify account to access your playlists and saved tracks.<br>
                                 <br>
                                 3. Save: Save your playlists to Spotify and enjoy them on all your devices.
-                                </figcaption><button><a href="https://playlife.netlify.app/" target="_blank">Playlife</a></button></figure>
+                                </figcaption><button><a class="goto" href="https://playlife.netlify.app/" target="_blank">Playlife</a></button></figure>
                         </section> 
                     </div>
                     
@@ -69,16 +76,16 @@
         <div id="namenav"> 
                 <span>Front-End Developer</span>
         </div>
-            <h2>
-                Skills
-    </h2>
-            <i class="fa-brands fa-html5 fa-2xl" style="color: #F16529;"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #3c99dc;"></i>
-            <i class="fa-brands fa-js fa-2xl" style="color: #F0DB4F;"></i>
-            <i class="fa-brands fa-react fa-2xl" style="color: #61dbfb;"></i>
-            <i class="fa-brands fa-node fa-2xl" style="color: #3c873a;"></i>
-            <i class="fa-brands fa-git-alt fa-2xl" style="color: #f34f29;"></i>
-            <i class="fa-brands fa-github fa-2xl" style="color: #171515;"></i>
+            <h3>
+                My skills:
+            </h3>
+            <i class="fa-brands fa-html5 fa-2xl" style="color: #F16529; font-size: 50px;" title="HTML"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl" style="color: #3c99dc; font-size: 50px;" title="CSS"></i>
+            <i class="fa-brands fa-js fa-2xl" style="color: #F0DB4F; font-size: 50px;" title="JavaScript"></i>
+            <i class="fa-brands fa-react fa-2xl" style="color: #61dbfb; font-size: 50px;" title="React"></i>
+            <i class="fa-brands fa-node fa-2xl" style="color: #3c873a; font-size: 50px;" title="Node JS"></i>
+            <i class="fa-brands fa-git-alt fa-2xl" style="color: #f34f29; font-size: 50px;" title="Git"></i>
+            <i class="fa-brands fa-github fa-2xl" style="color: #171515; font-size: 50px;" title="GitHub"></i>
        </div>
    </footer>
    <!-- Add your existing footer content here -->
