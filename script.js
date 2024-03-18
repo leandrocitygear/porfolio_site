@@ -42,3 +42,33 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("fullImageView").style.display = "none";
     document.getElementById("fullImageView").style.cursor = "pointer";
  }
+
+
+
+
+
+ let playButtons = document.querySelectorAll(".albumArt");
+ let audio = null; // Will hold the audio element
+ let isPlaying = false;
+ 
+ let togglePlay = (audioSrc) => {
+     if (isPlaying) {
+         audio.pause();
+         isPlaying = false;
+     } else {
+         if (audio) {
+             audio.pause(); // Pause currently playing audio if any
+         }
+         audio = new Audio(audioSrc); // Create a new audio element
+         audio.play();
+         isPlaying = true;
+     }
+ }
+ 
+ playButtons.forEach(img => {
+     img.addEventListener("click", () => {
+         let audioSrc = img.getAttribute("data-audio");
+         togglePlay(audioSrc);
+     });
+ });
+ 
