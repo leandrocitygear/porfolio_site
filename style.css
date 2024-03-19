@@ -406,3 +406,17 @@ li .albumArt {
   transition-duration: 350ms;
 cursor: pointer;
 }
+
+.fa-solid {
+  position: relative;
+  left: -60px;
+  top: 270px;
+}
+
+a .fa-solid {
+  color: #848484;
+}
+
+a .fa-solid:hover {
+  color: darkolivegreen;
+}
