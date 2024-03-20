@@ -21,7 +21,7 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   body {
    overflow: visible;
    /* display: inline; */
@@ -39,7 +39,7 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #container {
       /* margin: 0; */
       /* padding: 0; */
@@ -66,7 +66,7 @@ body {
   /* display: inline-flex; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #horizontalcontent {
    /* overflow-y:visible; */
    /* overflow-x: hidden; */
@@ -86,7 +86,7 @@ body {
 
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  #parallax {
   /* display: inline; */
    /* overflow: visible; */
@@ -107,7 +107,7 @@ body {
   z-index: 1;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #foreground {
     /* left: 0; */
     /* width: 100%; */
@@ -129,11 +129,13 @@ body {
   /* z-index: 1; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #profilewidget {
    /* margin-left: 0; */
    /* z-index: 0; */
    /* visibility: hidden; */
+   width: 250px;
+   margin-left: -240px;
  }
 }
 
@@ -143,6 +145,13 @@ body {
   margin: 0px;
   line-height: 26px;
   padding: 10px;
+}
+ 
+@media only screen and (max-width: 450px) {
+ #profiledetails {
+  line-height: 30px;
+   
+ }
 }
 
 #stream {
@@ -156,10 +165,9 @@ body {
   /* visibility: hidden; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #stream {
-   /* display: inline; */
-   /* padding-left: 0; */
+   padding-left: 0;
  }
 }
 
@@ -180,7 +188,7 @@ left: 0;
 right: 0;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  #footer { 
   /* z-index: 0; */
   /* position: relative; */
@@ -206,7 +214,7 @@ margin-right: 30px;
 z-index: 1;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  #global-nav {
    overflow-y: hidden;
 overflow-x: scroll;
@@ -214,7 +222,7 @@ overflow-x: scroll;
  }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #global-nav::-webkit-scrollbar{
     display: none;
    
@@ -232,7 +240,7 @@ h3 {
   /* margin: 0; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  h3 {
   font-size: 15px;   
  }
@@ -258,7 +266,7 @@ align-items: center;
   padding: 7px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  #namenav span {
    /* visibility: hidden; */
    left: 0px;
@@ -276,10 +284,10 @@ left: 25px;
 cursor: pointer;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  figure img {
-  /* width: 320px; */
-   
+  width: 200px;
+   left: 0;
  }
 }
 
@@ -290,9 +298,10 @@ figure {
   padding: 5px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   figure {
-    /* width: auto; */
+    width: 200px;
+    height: 625px;
    
  }
 }
@@ -300,8 +309,13 @@ figure {
 figcaption {
   color: black;
   line-height: 18px;
-  
   font-size: 15px;
+}
+
+@media only screen and (max-width: 1020px) {
+  figcaption {
+   line-height: 23px;
+ }
 }
 
 .proje{
@@ -331,6 +345,13 @@ figcaption {
   font-size: 17px;
 }
 
+@media only screen and (max-width: 1020px) {
+  .proje {
+    left: 63px; 
+    top: 20px;
+ }
+}
+
 #unifiedsidebar {
   position: fixed;
 left: 0;
@@ -348,7 +369,7 @@ overflow: scroll;
 padding-bottom: 80px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #unifiedsidebar{
     /* visibility: hidden; */
     /* z-index: 0; */
@@ -357,6 +378,8 @@ padding-bottom: 80px;
     /* bottom: 500px; */
     top: 200px;
     bottom: 58px;
+    width: 150px;
+    overflow: hidden;
     
    
  }
@@ -396,7 +419,7 @@ border-top: 0;
 /* border: solid green; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #sidebar {
     /* position: a; */
    z-index: 0;
@@ -450,7 +473,7 @@ bottom: 0;
 left: 150px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
   #wrap {
     /* left: 0; */
     /* position:relative; */
@@ -481,7 +504,7 @@ transition: opacity 0.5s ease 0s;
 transition: margin-left 0.5s ease 0s;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
  #background {
   /* visibility: hidden; */
    
@@ -527,10 +550,6 @@ transition: margin-left 0.5s ease 0s;
   cursor: pointer;
 }
 
-
-
-
-
 ul {
   margin: 0;
   padding: 0;
@@ -560,18 +579,20 @@ cursor: pointer;
   position: relative;
   left: -60px;
   top: 270px;
+  color: grey;
 }
 
-a .fa-solid {
-  color: #848484;
+
+.fa-solid:hover {
+  color: lightcoral;
 }
 
-a .fa-solid:hover {
-  color: darkolivegreen;
-}
-
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 450px) {
    .fa-solid {
     /* visibility: hidden; */
+    left: -60px;
+    position: absolute;
+    top: 620px;
+    color: white;
   }
 }
