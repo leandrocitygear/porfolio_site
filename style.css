@@ -21,12 +21,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-   overflow: visible;
-   /* display: inline; */
- }
-}
 
 #container {
   position: absolute;
@@ -37,17 +31,6 @@ body {
   left: 0;
   /* border: solid black; */
   overflow: hidden;
-}
-
-@media only screen and (max-width: 450px) {
-  #container {
-      /* margin: 0; */
-      /* padding: 0; */
-      /* bottom: 0; */
-      /* overflow: visible; */
-      /* visibility: hidden; */
-      /* display: inline; */
-  }
 }
 
 #horizontalcontent {
@@ -66,15 +49,7 @@ body {
   /* display: inline-flex; */
 }
 
-@media only screen and (max-width: 450px) {
-  #horizontalcontent {
-   /* overflow-y:visible; */
-   /* overflow-x: hidden; */
-   /* white-space: normal; */
-   /* visibility: hidden; */
-   /* display: inline; */
- }
-}
+
 
 #parallax {
   /* border: solid orangered; */
@@ -371,15 +346,11 @@ padding-bottom: 80px;
 
 @media only screen and (max-width: 450px) {
   #unifiedsidebar{
-    /* visibility: hidden; */
-    /* z-index: 0; */
-    /* width: 150px; */
-    /* height: 300px; */
-    /* bottom: 500px; */
     top: 200px;
     bottom: 58px;
     width: 150px;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: 30px;
     
    
  }
