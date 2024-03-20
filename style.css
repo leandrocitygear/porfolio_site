@@ -4,7 +4,6 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   vertical-align: baseline;
-  /* border: solid green; */
   margin: 0px;
   padding: 0px;
 }
@@ -16,7 +15,6 @@ body {
   height: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1;
-  /* border: solid blue; */
   margin: 0;
   overflow: hidden;
 }
@@ -27,9 +25,7 @@ body {
   top: 0;
   right: 0;
   bottom: 58px;
-  /* height: 100%; */
   left: 0;
-  /* border: solid black; */
   overflow: hidden;
 }
 
@@ -40,33 +36,20 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  /* border: solid  green; */
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  /* visibility: hidden; */
-  /* display: inline-flex; */
 }
 
 
 
 #parallax {
-  /* border: solid orangered; */
   white-space: normal;
-  /* display: inline-flex; */
   padding-left: 0;
-  /* height: 568px; */
   height: 100%;
-
 }
 
-@media only screen and (max-width: 450px) {
- #parallax {
-  /* display: inline; */
-   /* overflow: visible; */
- }
-}
 
 #foreground {
   position: relative;
@@ -75,22 +58,9 @@ body {
   background-color: #F3F3F3;
   padding: 0;
   width: max-content;
-  /* border: solid green; */
   display: inline-flex;
   margin: 0;
-  /* transition: left 0.5s ease 0s; */
   z-index: 1;
-}
-
-@media only screen and (max-width: 450px) {
-  #foreground {
-    /* left: 0; */
-    /* width: 100%; */
-    /* display: inline; */
-    /* z-index: 0; */
-    /* overflow: visible; */
-   /* visibility: hidden; */
- }
 }
 
 #profilewidget {
@@ -100,15 +70,10 @@ body {
   width: 320px;
   background: rgba(33, 33, 33, 0.7);
   color: rgb(238, 238, 238);
-  /* border: solid blue; */
-  /* z-index: 1; */
 }
 
 @media only screen and (max-width: 450px) {
   #profilewidget {
-   /* margin-left: 0; */
-   /* z-index: 0; */
-   /* visibility: hidden; */
    width: 250px;
    margin-left: -240px;
  }
@@ -116,7 +81,6 @@ body {
 
 #profiledetails {
   position: absolute;
-  /* top: 50px; */
   margin: 0px;
   line-height: 26px;
   padding: 10px;
@@ -125,19 +89,15 @@ body {
 @media only screen and (max-width: 450px) {
  #profiledetails {
   line-height: 30px;
-   
  }
 }
 
 #stream {
   position: relative;
   float: left;
-  /* padding: 10px; */
   padding-left: 70px;
   white-space: normal;
-  /* border: solid purple; */
   display: inline-flex;
-  /* visibility: hidden; */
 }
 
 @media only screen and (max-width: 450px) {
@@ -163,18 +123,6 @@ left: 0;
 right: 0;
 }
 
-@media only screen and (max-width: 450px) {
- #footer { 
-  /* z-index: 0; */
-  /* position: relative; */
-  /* width: 200px; */
-  /* height: 300px; */
-/* margin: 0; */
-/* top: 600px; */
-   
- }
-}
-
 #global-nav {
 position: fixed;
 height: 58px;
@@ -184,7 +132,6 @@ left: 0;
 right: 0;
 display: inline-flex;
 background-color: #373737;
-/* border: solid green; */
 margin-right: 30px;
 z-index: 1;
 }
@@ -192,15 +139,13 @@ z-index: 1;
 @media only screen and (max-width: 450px) {
  #global-nav {
    overflow-y: hidden;
-overflow-x: scroll;
-
+   overflow-x: scroll;
  }
 }
 
 @media only screen and (max-width: 450px) {
   #global-nav::-webkit-scrollbar{
     display: none;
-   
  }
 }
 
@@ -208,11 +153,9 @@ overflow-x: scroll;
   margin: 30px;
 }
 
-
 h3 {
   color:white;
   font-size: 20px;
-  /* margin: 0; */
 }
 
 @media only screen and (max-width: 450px) {
@@ -243,7 +186,6 @@ align-items: center;
 
 @media only screen and (max-width: 450px) {
  #namenav span {
-   /* visibility: hidden; */
    left: 0px;
    font-size: 15px; 
    margin-right: 10px;
@@ -253,7 +195,6 @@ align-items: center;
 
 figure img {
 width: 400px;
-/* margin: 10px; */
 position:relative;
 left: 25px;
 cursor: pointer;
@@ -276,8 +217,7 @@ figure {
 @media only screen and (max-width: 450px) {
   figure {
     width: 200px;
-    height: 625px;
-   
+    height: 625px; 
  }
 }
 
@@ -301,7 +241,6 @@ figcaption {
     padding: .37rem 0;
     border-radius: 54px;
     border-width: 0px;
-    /* margin-top: 5px; */
     background-color: darkolivegreen;
     text-align: center;
     font-size: .83rem;
@@ -333,13 +272,8 @@ left: 0;
 top: 0;
 bottom: 0;
 width: 150px;
-/* padding: 10px 10px; */
 background-color: #030303;
-/* background-color: white; */
 z-index: 5;
-/* box-sizing: border-box; */
-/* -moz-box-sizing: border-box; */
-/* -webkit-box-sizing: border-box; */
 overflow: scroll;
 padding-bottom: 80px;
 }
@@ -351,8 +285,6 @@ padding-bottom: 80px;
     width: 150px;
     overflow-x: hidden;
     padding-bottom: 30px;
-    
-   
  }
 }
 
@@ -362,12 +294,6 @@ padding-bottom: 80px;
 
 header {
   width: 100%;
-}
-
-#sidebar #footer {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 
 #sidebar {
@@ -387,14 +313,11 @@ line-height: 18px;
 color: #FFF;
 word-wrap: break-word;
 border-top: 0;
-/* border: solid green; */
 }
 
 @media only screen and (max-width: 450px) {
   #sidebar {
-    /* position: a; */
    z-index: 0;
-   /* botom: 300px; */
    top: 0px;
    left: 0px;
    right: 0px;
@@ -403,7 +326,6 @@ border-top: 0;
    width: 145px;
  }
 }
-
 
 .mediasquare {
   padding: 5px 5px 0;
@@ -444,14 +366,6 @@ bottom: 0;
 left: 150px;
 }
 
-@media only screen and (max-width: 450px) {
-  #wrap {
-    /* left: 0; */
-    /* position:relative; */
-   /* overflow: visible; */
- }
-}
-
 h4 {
   border: solid;
   width: 400px;
@@ -462,24 +376,15 @@ h4 {
 position: absolute;
 background-image: url(./full.jpg);
 left: 0;
-/* transform: translate3d(-299.5px, 0px, 0px); */
 top: 0;
 bottom: 0;
 width: 95%;
-/* height: 100%; */
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 transition: opacity 0.5s ease 0s;
  margin-left: 0px;
 transition: margin-left 0.5s ease 0s;
-}
-
-@media only screen and (max-width: 450px) {
- #background {
-  /* visibility: hidden; */
-   
- }
 }
 
 .links {
@@ -553,14 +458,12 @@ cursor: pointer;
   color: grey;
 }
 
-
 .fa-solid:hover {
   color: lightcoral;
 }
 
 @media only screen and (max-width: 450px) {
    .fa-solid {
-    /* visibility: hidden; */
     left: -60px;
     position: absolute;
     top: 620px;
