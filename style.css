@@ -9,7 +9,12 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: #f4f4f4;
+  background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  backdrop-filter: brightness(70%) blur(0px);
+  color:white ;
   /* border: solid red ; */
 }
 
@@ -19,12 +24,11 @@ body {
   position: absolute;
   left: 240px;
   /* z-index: 20; */
-  font-weight: 200;
+  font-weight: 400;
 }
 
 
 #intro {
-  color: black;
   font-size: 25px;
   position: absolute;
   left: 100px;
@@ -45,7 +49,7 @@ body {
   left: 470px;
   /* z-index: 20; */
   font-size: 35px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 #list {
@@ -81,7 +85,7 @@ body {
 }
 
 .links {
-  color: black ;
+  color: white ;
   text-decoration: none;
 
 } 
@@ -99,7 +103,7 @@ body {
   position: absolute;
   right: 430px;
   top: 100px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 35px;
   /* border: solid; */
 }
@@ -128,7 +132,7 @@ body {
 .item:hover {
   transform: scale(1.07);
   transition-duration: 250ms;
-  background-color: rgb(197, 233, 245);
+  /* background-color: ; */
 }
 
 .summary {
