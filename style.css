@@ -12,8 +12,8 @@ html {
   height: 100%;
   width: 100%;
   overflow-y: scroll ;
-  overflow-x: hidden;
-  /* border: solid red; */
+  /* overflow-x: hidden; */
+  border: solid red;
  }
  }
 
