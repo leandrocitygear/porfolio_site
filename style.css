@@ -11,9 +11,9 @@ html {
  html {
   height: 100%;
   width: 100%;
-  overflow: hidden ;
+  overflow-y: scroll ;
   overflow-x: hidden;
-  border: solid red;
+  /* border: solid red; */
  }
  }
 
@@ -33,7 +33,7 @@ body {
   body {
     height: 100%;
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
     /* overflow-x: hidden; */
     /* border: solid green; */
     background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
