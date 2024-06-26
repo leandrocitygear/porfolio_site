@@ -208,7 +208,7 @@ body {
 @media screen and (max-width: 800px) {
   #projectList {
    top: 700px;
-   width: fit-content;
+   width: 100%;
    right: 0;
    padding-left: 0px;
   padding-right: 0px;
