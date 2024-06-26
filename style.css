@@ -10,9 +10,9 @@ html {
 
 @media screen and (max-width: 800px) {
  html {
-   overflow: hidden ;
+   overflow: scroll ;
    /* overflow-x: hidden; */
-   border: solid red;
+   /* border: solid red; */
  }
 }
 
@@ -23,16 +23,16 @@ body {
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
   background-repeat: no-repeat;
   background-position:center;
-  background-size: cover;
+  background-size: contain;
   backdrop-filter: brightness(70%);
   color:white ;
 }
 
 @media screen and (max-width: 800px) {
   body {
-    overflow:hidden;
+    overflow: scroll;
     /* overflow-x: hidden; */
-   border: solid green;
+   /* border: solid green; */
 
   }
 }
