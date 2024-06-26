@@ -10,7 +10,7 @@ html {
 
 @media screen and (max-width: 800px) {
  html {
-   overflow: scroll ;
+   overflow: hidden ;
    overflow-x: hidden;
    /* border: solid red; */
  }
