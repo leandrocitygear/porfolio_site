@@ -11,7 +11,7 @@ html {
 @media screen and (max-width: 800px) {
  html {
    overflow: scroll ;
-   /* overflow-x: hidden; */
+   overflow-x: hidden;
    /* border: solid red; */
  }
 }
@@ -22,8 +22,8 @@ body {
   width: 100%;
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
   background-repeat: no-repeat;
-  background-position:bottom;
-  background-size: contain;
+  background-position:center;
+  background-size: cover;
   backdrop-filter: brightness(70%);
   color:white ;
 }
@@ -31,7 +31,7 @@ body {
 @media screen and (max-width: 800px) {
   body {
     overflow: scroll;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
    /* border: solid green; */
 
   }
