@@ -3,14 +3,14 @@ html {
   width: 100%;
   font-family: "Inter", sans-serif;
   margin: 0px;
+  box-sizing: border-box;
   padding: 0px;
-  overflow: scroll;
 
 }
 
 @media screen and (max-width: 800px) {
  html {
-   overflow: hidden ;
+   /* overflow: hidden ; */
    overflow-x: hidden;
    /* border: solid red; */
  }
@@ -30,7 +30,7 @@ body {
 
 @media screen and (max-width: 800px) {
   body {
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-x: hidden;
    /* border: solid green; */
 
