@@ -22,7 +22,7 @@ body {
   width: 100%;
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:bottom;
   background-size: contain;
   backdrop-filter: brightness(70%);
   color:white ;
