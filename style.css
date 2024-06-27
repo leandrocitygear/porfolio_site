@@ -1,21 +1,13 @@
 
-html {
+html, body {
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0px;
-  }
-
-@media screen and (max-width: 800px) {
- html {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll ;
-  /* overflow-x: hidden; */
   border: solid red;
- }
- }
+
+  }
 
 body {
   height: 100%;
@@ -33,15 +25,7 @@ body {
   body {
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
-    /* overflow-x: hidden; */
-    /* border: solid green; */
-    background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
-    /* background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    backdrop-filter: brightness(70%); */
-    
+    border: solid green;
   }
 }
 
