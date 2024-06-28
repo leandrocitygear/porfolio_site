@@ -1,16 +1,18 @@
 
-html, body {
+html {
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0px;
-  /* border: solid red; */
-  overflow: scroll;
+  border: solid red;
+  overflow: hidden;
 
   }
 
 body {
+  height: 100%;
+  width: 100%;
   color:white ;
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
     background-repeat: no-repeat;
@@ -22,6 +24,7 @@ body {
 @media screen and (max-width: 800px) {
   body {
     /* border: solid green; */
+    overflow: scroll;
 
   }
 }
