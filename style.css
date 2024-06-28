@@ -1,62 +1,135 @@
-html, body {
+
+html {
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+  margin: 0px;
+  padding: 0px;
+  }
+
+@media screen and (max-width: 800px) {
+ html {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll ;
+  /* overflow-x: hidden; */
+  border: solid red;
+ }
+ }
 
 body {
-  color: white;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  color:white ;
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  backdrop-filter: brightness(70%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    backdrop-filter: brightness(70%);
 }
 
-h1, p {
-  margin: 0;
+@media screen and (max-width: 800px) {
+  body {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    /* border: solid green; */
+
+  }
 }
 
 #name {
   font-size: 60px;
+  position: absolute;
+  left: 100px;
   font-weight: 400;
+  height: fit-content;
+  width: 800px;
   text-align: center;
-  padding: 10px;
-  max-width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 800px) {
   #name {
+    left: 0px;
     font-size: 50px;
+    padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
   }
 }
 
-#intro, #skills {
+#intro {
   font-size: 25px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
   text-align: center;
   padding: 10px;
-  max-width: 90%;
+  width: 800px;
+  height: 100px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 800px) {
-  #intro {
+   #intro {
+    left: 0;
+    top:150px;
     font-size: 20px;
+    width:fit-content;
+    height: fit-content;
   }
 }
 
+#skills {
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  font-size: 35px;
+  font-weight: 400;
+  height: 43px;
+  width: 800px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #skills {
+   top: 270px;
+   left: 0px;
+   height: fit-content;
+  width: 100%;
+  padding: 0;
+ }
+}
+
 #list {
-  display: flex;
-  flex-wrap: wrap;
+  position: absolute;
+  width: 800px;
+  height: 150px;
+  top: 340px;
+  left: 100px;
+  padding: 10px;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
-  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+ #list {
+   left: 0;
+   top: 360px;
+   width: fit-content;
+   height: fit-content;
+   padding-left: 0;
+   padding: 0;
+   justify-content: center;
+ }
 }
 
 .skill {
@@ -64,21 +137,35 @@ h1, p {
   width: 120px;
   height: 20px;
   text-align: center;
-  margin: 5px;
 }
 
 #contact {
-  display: flex;
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px;
-  max-width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #contact {
+    left: 0px;
+   top: 530px;
+   width: 100%;
+   padding-left: 0px;
+  padding-right: 0px;
+ }
 }
 
 .links {
   color: black;
   text-decoration: none;
-}
+} 
 
 .icon {
   font-size: 30px;
@@ -89,30 +176,68 @@ h1, p {
   transition-duration: 250ms;
 }
 
-#projects {
+#projects{
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  height: fit-content;
+  width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
   font-weight: 400;
   font-size: 35px;
-  text-align: center;
-  padding: 10px;
-  max-width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  #projects {
+   right: 0px;
+   top: 650px;
+   width: 100%;
+   padding-left: 0px;
+  padding-right: 0px;
+ }
 }
 
 #projectList {
-  display: flex;
+  position: absolute;
+  height: 730px;
+  width: 800px;
+  right: 100px;
+  bottom: 0;
+  display:flex ;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
-  max-width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #projectList {
+   top: 700px;
+   width: 100%;
+   right: 0;
+   padding-left: 0px;
+  padding-right: 0px;
+  /* border: solid blue; */
+ }
 }
 
 .item {
   border-bottom: solid 1px;
-  width: 100%;
-  max-width: 600px;
+  height: 110px;
+  width: 600px;
   font-size: 25px;
   font-weight: 400;
-  margin: 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .item {
+   width: fit-content;
+   height: fit-content;
+   padding: 3px;
+ }
 }
 
 .item:hover {
@@ -122,10 +247,4 @@ h1, p {
 
 .summary {
   font-size: 16px;
-}
-
-@media screen and (max-width: 800px) {
-  .item {
-    width: 100%;
-  }
 }
