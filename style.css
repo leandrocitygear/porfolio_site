@@ -5,14 +5,12 @@ html, body {
   font-family: "Inter", sans-serif;
   margin: 0px;
   padding: 0px;
-  border: solid red;
+  /* border: solid red; */
+  overflow: scroll;
 
   }
 
 body {
-  height: 100%;
-  margin: 0;
-  width: 100%;
   color:white ;
   background-image: url(./resorces/original_4af9afac529ea8334109f7042b824443.jpg);
     background-repeat: no-repeat;
@@ -23,9 +21,8 @@ body {
 
 @media screen and (max-width: 800px) {
   body {
-    height: 100%;
-    width: 100%;
-    border: solid green;
+    /* border: solid green; */
+
   }
 }
 
@@ -34,11 +31,12 @@ body {
   position: absolute;
   left: 100px;
   font-weight: 400;
-  height: fit-content;
-  width: 800px;
+  height: 7.5%;
+  width: 41.7%;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  border: solid;
 }
 
 @media screen and (max-width: 800px) {
@@ -47,7 +45,7 @@ body {
     font-size: 50px;
     padding-left: 0px;
   padding-right: 0px;
-  width: 100%;
+  /* width: 100%; */
   }
 }
 
@@ -58,9 +56,10 @@ body {
   top: 100px;
   text-align: center;
   padding: 10px;
-  width: 800px;
-  height: 100px;
+  width: 41.7%;
+  height: 10%;
   font-weight: 300;
+  border: solid;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,8 +78,10 @@ body {
   left: 100px;
   font-size: 35px;
   font-weight: 400;
-  height: 43px;
-  width: 800px;
+  height: 4%;
+  width: 41.7%;
+  border: solid;
+  
   padding: 10px;
   text-align: center;
 }
@@ -97,8 +98,9 @@ body {
 
 #list {
   position: absolute;
-  width: 800px;
-  height: 150px;
+  width: 41.7%;
+  border: solid;
+  height: 16%;
   top: 340px;
   left: 100px;
   padding: 10px;
@@ -129,8 +131,9 @@ body {
 }
 
 #contact {
-  width: 800px;
-  height: 100px;
+  width: 41.7%;
+  border: solid;
+  height: 11%;
   position: absolute;
   top: 700px;
   left: 100px;
@@ -169,8 +172,9 @@ body {
   position: absolute;
   right: 100px;
   top: 150px;
-  height: fit-content;
-  width: 800px;
+  height: 5%;
+  width: 41.7%;
+  border: solid;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -191,13 +195,18 @@ body {
 #projectList {
   position: absolute;
   height: 730px;
-  width: 800px;
+  height: 77%;
+  width: 41.7%;
+  border: solid;
+  
   right: 100px;
   bottom: 0;
   display:flex ;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  text-align: center;
+  /* align-items: center; */
+  /* align-content: center; */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -214,11 +223,13 @@ body {
 }
 
 .item {
-  border-bottom: solid 1px;
-  height: 110px;
-  width: 600px;
+  /* border-bottom: solid 1px; */
+  /* height: 93%; */
+  /* width: 600px; */
+  /* width: 65%; */
   font-size: 25px;
   font-weight: 400;
+  border: solid;
 }
 
 @media screen and (max-width: 800px) {
