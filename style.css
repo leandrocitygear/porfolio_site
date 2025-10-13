@@ -6,6 +6,7 @@
     --glass: rgba(255,255,255,0.06);
   }
   *{box-sizing:border-box}
+
   body{
     margin:0;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -18,7 +19,6 @@
     align-items:center;
     justify-content:center;
     padding:32px;
-    overflow: hidden;
   }
 
   .container{
@@ -82,6 +82,11 @@
     color:white;
     box-shadow: 0 8px 24px rgba(79,70,229,0.22);
   }
+
+  .btn-primary:hover {
+    background:linear-gradient(90deg,#8b5cf6,#6366f1);
+  }
+
   .btn-ghost{
     background:transparent;
     color:var(--muted);
@@ -136,7 +141,3 @@
   }
   .glow.one{ background: radial-gradient(circle at 30% 30%, #7c3aed, transparent 40%); left: -40px; top: -40px; }
   .glow.two{ background: radial-gradient(circle at 70% 70%, #06b6d4, transparent 30%); right:-40px; bottom:-40px; transform:translateY(30px); opacity:0.12;}
-
-  .fa-brands {
-    color: red
-  }
