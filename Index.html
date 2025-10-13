@@ -13,162 +13,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body> 
-    
-    <div id="background"></div>
-    
-    <main>
-    <h1 id="name">Leandro De la cruz</h1>
-            
+<body>
 
-    
-    <h2 id="skills">Skills</h2>
-    
-    <ul id="list">
-        <li class="skill">JavaScript</li>
-        <li class="skill">React</li>
-        <li class="skill">Redux</li>
-        <li class="skill">HTML</li>
-        <li class="skill">CSS</li>
-        <li class="skill">Git</li>
-        <li class="skill">Tailwind css</li>
-    </ul>
-    
-    <div id="contact">
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<main class="container">
+  <section class="left">
+    <h1>
+      Hi, I’m <span class="name">Leandro De la Cruz</span>.<br/>
+      I build simple, precise, and user-friendly web apps.
+    </h1>
+
+    <p class="subtitle">
+      Software Engineer in San Juan, Puerto Rico. I turn complex problems into clean, fast, and accessible interfaces — with a focus on clarity, performance, and users who actually enjoy using the product.
+    </p>
+
+    <div class="badges">
+      <div class="badge">Javascript</div>
+      <div class="badge">React</div>
+      <div class="badge">HTML</div>
+      <div class="badge">Tailwind / CSS</div>
+      <div class="badge">Redux</div>
+      <div class="badge">Git</div>
+    </div>
+
+    <div class="cta-row">
+      <button class="btn btn-primary" onclick="window.location.href='projects.html'">View Projects</button>
+      
+    </div>
+
+    <p style="margin-top:18px;color:var(--muted);font-size:13px;max-width:56ch;">
+      I build clean, accessible web apps using React and modern CSS. I care about performance, readable code, and products that solve real user problems.
+    </p>
+  </section>
+
+  <aside class="right">
+    <div class="mock">
+      <div class="top">
+        <div style="display:flex;gap:8px;align-items:center">
+          <div class="dot"></div><div class="dot yellow"></div><div class="dot green"></div>
+        </div>
+      </div>
+
+      <h4>Contact Me</h4>
+      
+        <p>Email: leandrocitygear@icloud.com</p>
+        <p>Tel: 787-509-7430</p>
+        <br>
+
+      <div class="contact">
 
         <a class="links" href="https://linkedin.com/in/leandro-de-la-cruz-730339281" target="_blank" title="LinkedIn" rel="noopener noreferrer">
 
-            <i class="fa-brands fa-linkedin icon"></i>
+            <i class="fa-brands fa-linkedin icon" style="color: white;"></i>
 
         </a>
 
         <a class="links" href="https://github.com/leandrocitygear" target="_blank" title="Github" rel="noopener noreferrer">
 
-            <i class="fa-brands fa-github icon"></i>
+            <i class="fa-brands fa-github icon" style="color: white;"></i>
 
         </a>
 
         <a class="links" href="mailto:leandrocitygear@gmail.com" target="_blank" title="Email" rel="noopener noreferrer">
 
-            <i class="fa-solid fa-envelope icon"></i>
+            <i class="fa-solid fa-envelope icon" style="color: white;"></i>
 
         </a>
         
         <a class="links" href="resorces/Leandro_De_la_Cruz_Resume.docx" target="_blank" title="Resume" rel="noopener noreferrer">
 
-            <i class="fa-regular fa-file-pdf icon"></i>
+            <i class="fa-regular fa-file-pdf icon" style="color: white;"></i>
             
         </a>
-
+      </div>
     </div>
-
-
-
+  </aside>
 </main>
-
-<aside>
-
-    <p id="intro">
-        Hi, I'm Leandro, I build simple, precise and robust software that puts the user first.
-        Currently, I'm based in San Juan, Puerto Rico, specializing in crafting tools and interfaces that are clear,
-        elegant and effective. Browse my projects below or get in touch if you're looking for an entry developer 
-        who values quality over complexity.   
-    </p>
-
-
-    <a class="links" href="https://rlight.netlify.app/" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">RedditLight
-
-            <p class="summary">
-
-                Redditlight is an ad free no nononse reddit thats cares so much about
-                your privacy that nothing is tracked no account is needed but you still 
-                have access to see all subreddits and view all post and comments.
-
-            </p>
-
-        </div>
-
-    </a>
-
-    <a class="links" href="https://hydrosolarpr.net" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">HydroSolar
-
-            <p class="summary">
-
-                HydroSolar is a small local business in Puerto Rico they 
-                wanted a simple website they could display their products and services.
-
-            </p>
-
-        </div>
-
-    </a>
-
-    <a class="links" href="https://appointmentspr.netlify.app/" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">Appointmentspr
-
-            <p class="summary">
-
-                Appointmentspr is a React demo for easy appointment creation using 
-                customer contact info, designed for seamless scheduling and management.  
-
-            </p>
-
-        </div>
-    </a>
-
-    <a class="links" href="https://playlife.netlify.app/" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">Playlife
-
-            <p class="summary">
-
-                Playlife allows you to create personalized playlists, 
-                sync them with your Spotify account, 
-                and save them for seamless enjoyment on all your devices.
-
-            </p>
-
-        </div>
-
-    </a>
-
-    <a class="links" href="https://nextmovi.netlify.app/" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">Next Movie
-
-            <p class="summary">
-
-                Next Movie dynamically displays currently playing or upcoming movies based on user interaction, 
-                providing real-time updates and an easy-to-navigate layout for switching between search results and the latest releases.
-
-            </p>
-
-        </div>
-
-    </a>
-
-    <a class="links" href="https://porfoliopro.netlify.app/" target="_blank" rel="noopener noreferrer">
-
-        <div class="item">Porfolio Pro
-
-            <p class="summary">
-
-                Portfolio Pro offers stock price tracking, 
-                news updates, and a customizable watchlist, 
-                allowing users to search for stocks, add them to their watchlist, 
-                and access real-time information and dynamic updates on market insights.
-
-            </p>
-
-        </div>
-
-    </a>
-    
-</aside>
 </body>
 </html>
