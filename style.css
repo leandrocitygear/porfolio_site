@@ -5,7 +5,10 @@
     --muted: #94a3b8;
     --glass: rgba(255,255,255,0.06);
   }
-  *{box-sizing:border-box}
+  * {
+    box-sizing: border-box;
+    /* max-width: 100%; */
+  }
 
   body{
     margin:0;
@@ -131,13 +134,18 @@
   
 
   .glow{
-    position:absolute;
-    pointer-events:none;
-    width:320px;
-    height:320px;
-    filter:blur(80px);
-    opacity:0.22;
-    transform:translateY(-80px);
+    position:fixed;
+    width:400px;
+    height:400px;
+    filter:blur(100px);
+    opacity:0.25;
+    z-index:-1;
   }
-  .glow.one{ background: radial-gradient(circle at 30% 30%, #7c3aed, transparent 40%); left: -40px; top: -40px; }
-  .glow.two{ background: radial-gradient(circle at 70% 70%, #06b6d4, transparent 30%); right:-40px; bottom:-40px; transform:translateY(30px); opacity:0.12;}
+  .glow.one{
+    top: 0; left: 0;
+    background:radial-gradient(circle at 30% 30%, #7c3aed, transparent 60%);
+  }
+  .glow.two{
+    bottom: 0px; right: 0px;
+    background:radial-gradient(circle at 70% 70%, #06b6d4, transparent 50%);
+  }
