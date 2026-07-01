@@ -1,8 +1,9 @@
  :root{
-    --bg1: #0f172a;
-    --bg2: #0b1220;
-    --accent: #7c3aed;
-    --muted: #94a3b8;
+    --bg1: #111827;
+    --bg2: #4c1d1d;
+
+    --accent: #f43f5e;
+    --muted: #9ca3af;
     --glass: rgba(255,255,255,0.06);
   }
   * {
@@ -100,6 +101,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
   }
   .mock{
     width:100%;
@@ -109,6 +111,7 @@
     padding:18px;
     border:1px solid rgba(255,255,255,0.04);
     box-shadow: 0 12px 30px rgba(2,6,23,0.6);
+    margin: 8px;
   }
   .mock .top{
     display:flex;
@@ -148,4 +151,20 @@
   .glow.two{
     bottom: 0px; right: 0px;
     background:radial-gradient(circle at 70% 70%, #06b6d4, transparent 50%);
+  }
+
+  .certifications {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .pdfs {
+    text-decoration: none;
+   margin-bottom: 6px;
+   width:fit-content;
+
+  }
+
+  .pdfs:hover {
+    font-weight: 700;
   }

@@ -1,8 +1,10 @@
 :root{
-    --bg1:#0f172a;
-    --bg2:#0b1220;
-    --accent:#7c3aed;
-    --muted:#94a3b8;
+    --bg1: #111827;
+    --bg2: #4c1d1d;
+
+    --accent: #f43f5e;
+    --muted: #9ca3af;
+    --glass: rgba(255,255,255,0.06);
   }
 * {
   box-sizing: border-box;
