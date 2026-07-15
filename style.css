@@ -63,8 +63,8 @@
     font-size:15px;
     max-width:60ch;
   }
-  .badges{ display:flex; gap:10px; flex-wrap:wrap; margin:16px 0;}
-  .badge{
+  .skills{ display:flex; gap:10px; flex-wrap:wrap; margin:16px 0;}
+  .skill{
     background:var(--glass);
     color: #dbeafe;
     padding:8px 12px;
